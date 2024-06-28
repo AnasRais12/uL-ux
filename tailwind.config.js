@@ -7,12 +7,21 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+     
+        fontFamily: {
+          curving: ["Luckiest Guy", "cursive"],
+          second: ["Noto Sans HK", "sans-serif;"]
+  
+        },
+        backgroundImage: {
+          "hero": "url('/images/jordna-2.avif')",
+          "her1": "url('/images/nike-2.webp')",
+
+       
+  
+        },
       },
-    },
+    
   },
   plugins: [],
 };
