@@ -6,7 +6,7 @@ function Product() {
       full: "Jordan-1",
       img: "images/big-shoe2.png",
       price: "$200",
-      desc: "Jordan-2 is completely flexible and soft to wear ",
+      desc: "Jordan-2 is completely flexible and soft to",
     },
     {
       full: "Dunki",
@@ -18,7 +18,7 @@ function Product() {
       full: "Nike",
       img: "images/jordna-2.avif",
       price: "$210",
-      desc: "Nike this product has inspired to dunki product.",
+      desc: "Nike this product has inspired to dunki ",
     },
     {
       full: "Polo-shirt",
@@ -53,7 +53,7 @@ function Product() {
     {
       full: "G-shock9xm",
       img: "images/watch-3.avif",
-      price: "740",
+      price: "$740",
       desc: "G-shock 9xm has avalible on G-shock store",
     },
   ];
