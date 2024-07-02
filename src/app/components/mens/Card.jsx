@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-function Card({ item, ind, anas }) {
+function Card({ item, ind,}) {
   const [click, setclick] = useState(false);
   const [sumbit, setsumbit] = useState(false);
 
@@ -12,8 +12,8 @@ function Card({ item, ind, anas }) {
   };
   return (
     <>
-      <div key={ind} className="w-full h-[500px] px-20 py-[30px] relative ">
-        <div className="w-[340px] bg-red-500   rounded-[10px] border-4 border-black flex flex-col  text-black font-bold text-center py-[20px]  items-center   ">
+      <div key={ind} className="w-full   py-[30px] relative bg-yellow-900 px-[55px] ">
+        <div className=" w-[340px]   rounded-[10px] border-4 border-black flex flex-col  text-black font-bold text-center py-[20px] bg-yellow-600  items-center  ">
           <h1 className="text-[25px] mb-[10px]">{item?.full}</h1>
           <div className="w-[150px] h-[180px]    rounded-[50%]   duration-300 hover:animate-bounce    ">
             <img
@@ -39,29 +39,34 @@ function Card({ item, ind, anas }) {
             </button>
             {click && (
               
-              <div className="   bg-gray-200 w-[75%] h-[340px]   absolute top-[90px] left-[82px] rounded-[5px] ">
+              <div className="   bg-gray-200 w-[74%] h-[340px]   absolute top-[90px] left-[58px] rounded-[5px] ">
                 {setsumbit ?(
                 <form onSubmit={handler} className="flex flex-col   w-full px-1 " action="">
-                  <h4>
-                    <span>Price:</span>
-                    {item?.price}
-                  </h4>
+                  
 
-                  <h1 className="mb-[8px] font-bold text-[15px]">
+                  <h1 className="mb-[8px] font-bold text-[25px]">
                     Pay With Paypal
                   </h1>
+                  <label>
+                  <h1 className="mb-[6px]">Enter Paypal Email: </h1>
                   <input
                     required
                     className="mb-[8px] py-2 border-2 pl-2 "
                     type="email"
                     placeholder=" Your Email"
                   />
+                    </label>
+                  <label>
+                  <h1 className="mb-[6px]">Enter Code: </h1>
+
                   <input
+
                     required
                     className="mb-[8px] py-2 border-2 pl-2 "
                     type="password"
                     placeholder="Your Code"
                   />
+                  </label>
 
                   <button
                     className="mt-[8px] py-1 px-6 bg-black text-white focus:bg-red-950 rounded-[30px]"

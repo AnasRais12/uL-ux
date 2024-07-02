@@ -1,6 +1,6 @@
 import React from "react";
-import Card from "./Card";
-function Product() {
+import Card from "./mens/Card";
+function Product({ scrollToRef }) {
   const data = [
     {
       full: "Jordan-1",
@@ -59,7 +59,10 @@ function Product() {
   ];
 
   return (
-    <div className=" rounded-[10px] shadow-lg w-full grid gird-rows-3 grid-cols-3  ">
+    <div
+      ref={scrollToRef}
+      className=" rounded-[10px] shadow-lg w-full grid gird-rows-3 grid-cols-3  "
+    >
       {data.map((datas, index) => (
         <Card item={datas} ind={index} />
       ))}
