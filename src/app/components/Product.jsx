@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "./mens/Card";
-function Product({ scrollToRef }) {
+function Product({ scrollToRe, slide, addToCart }) {
   const data = [
     {
       full: "Jordan-1",
@@ -59,14 +59,24 @@ function Product({ scrollToRef }) {
   ];
 
   return (
-    <div
-      ref={scrollToRef}
-      className=" rounded-[10px] shadow-lg w-full grid gird-rows-3 grid-cols-3  "
-    >
-      {data.map((datas, index) => (
-        <Card item={datas} ind={index} />
-      ))}
-    </div>
+    <>
+      <div
+        ref={scrollToRe}
+        className=" rounded-[10px] shadow-lg w-full grid gird-rows-3 grid-cols-3 gap-10 px-[5%] mb-[20px]"
+      >
+        {data.map((datas, index) => (
+          <Card item={datas} ind={index} addToCart={addToCart} />
+        ))}
+      </div>
+      <div className="w-full items-center justify-center flex border-b-2 border-black mb-[40px] py-6 ">
+        <button
+          onClick={slide}
+          className="bg-black  text-white font-bold py-2 px-12 rounded-[20px]  active:bg-green-900 hover:bg-orange-800"
+        >
+          Back To Top
+        </button>
+      </div>
+    </>
   );
 }
 
