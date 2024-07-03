@@ -16,8 +16,8 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
       desc: " This Product made in china",
     },
     {
-      full: "7-10",
-      img: "images/clo-3.jpeg",
+      full: "7-10 Kid-Clothes",
+      img: "images/clo-1.jpeg",
       price: "$110",
       desc: "This Product made in USA ",
     },
