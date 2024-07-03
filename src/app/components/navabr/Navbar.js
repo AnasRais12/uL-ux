@@ -27,8 +27,8 @@ const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
         </div>
         <div className="w-[15%]  py-1 flex items-center gap-[25px] text-[19px] text-white  ">
           <Link
-            className="border-2 border-black hover:border-b-orange-100"
-            href=""
+            className="border-2 border-black hover:border-b-orange-100" target="blank"
+            href ="/help"
           >
             Help
           </Link>
