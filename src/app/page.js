@@ -34,10 +34,9 @@ const page = () => {
   function addToCart(item) {
     setCartItem([...cartItem, item]);
   }
-  console.log(cartItem);
 
   return (
-    <div className="bg-white w-full h-full ">
+    <div className=" w-full h-full bg-gradient-to-r from-green-950 via-green-500 to-black ">
       <Navbar
         scrollToSection={scrollToSection}
         scroll={scrollSection}

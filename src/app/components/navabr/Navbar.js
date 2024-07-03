@@ -46,8 +46,8 @@ const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
           </button>
         </div>
       </div>
-      <div className="w-full  h-[10vh] flex items-center font-bold text-black text-[20px] px-1">
-        <HiShoppingCart className=" text-[30px]  text-black hover:animate-spin duration-50" />
+      <div className="w-full bg-white px-2  flex items-center font-bold text-black text-[20px]">
+        <HiShoppingCart className=" bg-white text-[30px]   text-black hover:animate-spin duration-50" />
         <div className="w-full bg-white text-black h-[10vh] justify-center items-center gap-[50px]  flex">
           <button onClick={scroll} className="text-[20px] flex items-center">
             <BiMale className="text-[20px] hover:animate-bounce  text-red-900" />
@@ -73,12 +73,12 @@ const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
         </div>
       </div>
       <div className="w-full h-[70vh] bg-white flex mb-[40px]">
-        <div className="w-[50%] h-[70vh]border-r-4 border-black">
+        <div className="w-[100%] h-[70vh]border-r-4 border-black">
           <img className="w-full h-[70vh]" src="images/store-2.avif" />
         </div>
-        <div className="w-[50%] h-[70vh] border-r-4 border-black">
+        {/* <div className="w-[100%] h-[70vh] border-r-4 border-black">
           <img className="w-full h-[70vh]" src="images/store.avif" />
-        </div>
+        </div> */}
       </div>
       <div className="w-full h-full  text-black font-bold text-center  mb-[40px]  text-[40px] ">
         <h1 className=" heading  ">Men's Product</h1>
