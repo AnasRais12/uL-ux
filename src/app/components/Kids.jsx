@@ -34,7 +34,7 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
       desc: "This Gun is inspired by J-45",
     },
     {
-      full: "Full PACK Of Toys",
+      full: "Full Pack Of Toys",
       img: "images/toy-1.jpeg",
       price: "$610",
       desc: "Heaven of Toys",
