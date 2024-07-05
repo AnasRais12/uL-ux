@@ -5,3 +5,6 @@
     margin: 0px;
     padding: 0px;
 }
+.slide .slick-slider  {
+   color: black; /* Set your desired background color */
+  }

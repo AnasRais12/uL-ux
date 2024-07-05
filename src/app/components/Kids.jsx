@@ -6,55 +6,55 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
     {
       full: "Kidz Clothes Pack",
       img: "images/clo-1.jpeg",
-      price: "$400",
+      price: 400,
       desc: "50% off This Season",
     },
     {
       full: "5-7 Kidz CLothes",
       img: "images/clo-2.jpeg",
-      price: "$320",
+      price: 220,
       desc: " This Product made in china",
     },
     {
       full: "7-10 Kid-Clothes",
       img: "images/clo-1.jpeg",
-      price: "$110",
+      price: 320,
       desc: "This Product made in USA ",
     },
     {
       full: "Toy-Gun Juishonal",
       img: "images/gun-1.jpeg",
-      price: "$150",
+      price: 520,
       desc: "This is new product launch by K-Toys",
     },
     {
       full: "Gun-Shikoran",
       img: "images/gun-2.jpeg",
-      price: "$150",
+      price: 250,
       desc: "This Gun is inspired by J-45",
     },
     {
       full: "Full Pack Of Toys",
       img: "images/toy-1.jpeg",
-      price: "$610",
+      price: 700,
       desc: "Heaven of Toys",
     },
     {
       full: "Ferrari-Texios-",
       img: "images/toy-2.jpeg",
-      price: "$680",
+      price: 450,
       desc: "This Car Looks Texios",
     },
     {
       full: "Range-Toy-Rover",
       img: "images/toy-3.jpeg",
-      price: "$640",
+      price: 300,
       desc: "This Car look Rover",
     },
     {
       full: "Yahama-91",
       img: "images/toy-4.jpeg",
-      price: "$440",
+      price: 400,
       desc: "This Produucts Looks like Yahama",
     },
   ];
@@ -80,6 +80,7 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
           Back To Top
         </button>
       </div>
+      
     </>
   );
 };

@@ -1,10 +1,20 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { GiSplitCross } from "react-icons/gi";
-function SideBar({ isSideBar, setIsSideBar, setcartitem }) {
-  let Price = setcartitem.reduce((accumulator, currentItem) => {
-    return accumulator + currentItem.price;
-  }, 0);
 
+function SideBar({ isSideBar, setIsSideBar, cartitem }) {
+  const [total, settotal] = useState(0);
+  // const [item, setitem] = useState([data])
+
+    useEffect(()=>{
+      if(cartitem.length> 0){
+    const newtotal = cartitem.reduce((acc, currentItem) => {
+        return acc + currentItem.price++
+      
+    }, 0);
+    settotal(newtotal)
+  }
+  },[cartitem])
+  console.log(total)
   return (
     <div
       className={` ${
@@ -29,22 +39,39 @@ function SideBar({ isSideBar, setIsSideBar, setcartitem }) {
         <h1 className="w-[45%] text-end">Price</h1>
       </div>
 
-      {setcartitem.map((item, index) => (
+      {cartitem.map((item, index) => (
         <div key={index} className="">
           <div className="  w-full text-[20px] py-3 font-bold">
             <div className="w-full border-b-2 border-slate-400 flex items-center py-[10px] px-2 gap-2 ">
               <div className="w-[45%] py-2 flex gap-4 ">
-                <img className="w-[20%]   rounded-[50%]" src={item.img}/>
-              <h1> {item.full}</h1>
+                <img className="w-[20%]   rounded-[50%]" src={item.img} />
+                <h1> {item.full}</h1>
               </div>
               <div className="w-[45%] py-2">
-              <h1 className="text-right"> {item.price}</h1>
+                <h1 className="text-right"> ${item.price}</h1>
               </div>
             </div>
           </div>
         </div>
       ))}
-      <button className=" w-full px-4 py-4 mt-[20px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600">Proceed to Checkout</button>
+      <div className="w-full flex justify-center items-center">
+      <h4 className=" px-6 py-2 mb-[10px] rounded-[10px] bg-green-950 font-bold text-white">
+        ${total}
+      </h4>
+      </div>
+      <button className=" w-full px-4 py-4 mt-[10px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600">
+        Proceed To Checkout
+      </button>
+      {/* <div className="cart-items">
+        <ul>
+          {item.map((item, index) => (
+            <li key={index}>
+              {item.name} - Quantity: {item.quantity} - Price: ${item.price}
+            </li>
+          ))}
+        </ul>
+      </div>
+      <p>Total: ${total}</p> */}
     </div>
   );
 }

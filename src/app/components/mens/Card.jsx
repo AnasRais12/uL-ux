@@ -14,7 +14,7 @@ function Card({ item, ind, addToCart }) {
   return (
     <>
       {/* <div key={ind} className="w-full  duration-200 py-[30px] relative bg-yellow-900 px-[55px] "> */}
-      <div className=" w-full hover:scale-110 duration-200 relative rounded-[10px] border-4 border-black flex flex-col  text-black font-bold text-center py-[20px] items-center bg-gradient-to-r from-blue-500 via-slate-400 to-gray-700  ">
+      <div className=" w-full hover:scale-110 duration-200 relative rounded-[10px] border-4 border-black flex flex-col  text-black font-bold text-center py-[20px] items-center bg-white shadow-black shadow-lg  ">
         <h1 className="text-[25px] mb-[10px]">{item?.full}</h1>
         <div className="w-[150px] h-[180px] rounded-[50%] duration-300 ">
           <img
@@ -23,7 +23,7 @@ function Card({ item, ind, addToCart }) {
           />
         </div>
         <div className="mt-[10px]  ">
-          <h4 className="text-[25px] ">{item?.price}</h4>
+          <h4 className="text-[25px] ">${item?.price}</h4>
         </div>
         <div className="">
           <h5 className="text-[15px] mb-[10px] overflow-hidden">

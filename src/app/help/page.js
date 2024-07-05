@@ -15,11 +15,12 @@ import { FaFacebook } from "react-icons/fa";
 const Help = () => {
   return (
     <>
-      <div className="w-full h-[40vh] font-bold flex justify-center items-center text-white bg-gradient-to-r from-green-950 via-green-500  to-black text-[40px] ">
-        <h1>How Can We Help You?</h1>
+    <div className="w-full py-10 bg-gradient-to-r from-green-950 via-green-900  to-black">
+      <div className="w-full h-[40vh] font-bold flex justify-center items-center text-white text-[40px] ">
+        <h1>How Can We Help  You?</h1>
       </div>
-      <div className="w-full py-14 bg-gray-100  flex flex-col">
-        <div className="w-full bg-gray-100 py-10 flex justify-center items-center gap-16    ">
+      <div className="w-full   flex flex-col">
+        <div className="w-full bg-gray-200 py-10 flex justify-center items-center gap-16    ">
           <div className="py-10 bg-white flex px-4 items-center rounded-[15px] shadow-lg shadow-black text-blue-600 hover:scale-125 duration-500 ">
             <IoSettingsOutline className="text-[50px]" />
             <div className="flex flex-col px-2">
@@ -47,7 +48,7 @@ const Help = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-100 py-10 flex justify-center items-center gap-16  ">
+        <div className="w-full bg-gray-200 py-10 flex justify-center items-center gap-16  ">
           <div className="py-10 bg-white flex px-4 items-center rounded-[15px] shadow-lg shadow-black text-blue-600 hover:scale-125 duration-500 ">
             <FaLock className="text-[50px]" />
             <div className="flex flex-col px-2">
@@ -73,7 +74,7 @@ const Help = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-100  py-10 flex justify-center items-center gap-16  ">
+        <div className="w-full bg-gray-200  py-10 flex justify-center items-center gap-16  ">
           <div className="py-10 bg-white flex px-4 items-center rounded-[15px] shadow-lg shadow-black text-blue-600 hover:scale-125 duration-500 ">
             <AiFillProduct className="text-[50px]" />
             <div className="flex flex-col px-2">
@@ -99,7 +100,7 @@ const Help = () => {
             </div>
           </div>
         </div>
-        <div className="w-full bg-gray-100 py-10 flex justify-center items-center gap-16  ">
+        <div className="w-full bg-gray-200 py-10 flex justify-center items-center gap-16  ">
           <div className="py-10 bg-white flex px-4 items-center rounded-[15px] shadow-lg shadow-black text-blue-600 hover:scale-125 duration-500 ">
             <FaDownload className="text-[50px]" />
             <div className="flex flex-col px-2">
@@ -126,7 +127,7 @@ const Help = () => {
           </div>
         </div>
       </div>
-      <div className="w-full py-20 bg-gray-100  flex justify-center pt-[20px] flex-col ">
+      <div className="w-full py-20 bg-gray-200  flex justify-center pt-[20px] flex-col ">
         <h1 className="font-bold mb-[5px] text-[24px] text-center">
           Did'nt find an answer
         </h1>
@@ -150,6 +151,7 @@ const Help = () => {
         </div>
         <div className="w-full py-2 flex justify-center items-center ">
         <button  className="bg-blue-600 text-white font-bold  py-2 px-6 rounded-[15px] hover:bg-red-500 focus:bg-green-700"> Contact Us</button>
+        </div>
         </div>
         </div>
     </>

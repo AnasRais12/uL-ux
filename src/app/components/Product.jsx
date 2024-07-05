@@ -5,56 +5,71 @@ function Product({ scrollToRe, slide, addToCart }) {
     {
       full: "Jordan-1",
       img: "images/big-shoe2.png",
-      price: "$200",
+      price: 200,
       desc: "Jordan-2 is completely flexible and soft to",
+      quan:1,
     },
     {
       full: "Dunki",
       img: "images/big-shoe3.png",
-      price: "$220",
+      price: 220,
       desc: "Dunki has gadget to make your speed fast ",
+      quan:1,
+
     },
     {
       full: "Nike",
       img: "images/jordna-2.avif",
-      price: "$210",
+      price: 210,
       desc: "Nike this product has inspired to dunki ",
+      quan:1,
+
     },
     {
       full: "Polo-shirt",
       img: "images/polo-2.webp",
-      price: "$140",
+      price: 140,
       desc: "This is new product launch by Polo v-jh.",
+      quan:1,
+
     },
     {
       full: "Polo-jh",
       img: "images/polo-1.avif",
-      price: "$180",
+      price: 180,
       desc: "This shirt  is insipired by jordan story",
+      quan:1,
+
     },
     {
       full: "Polo",
       img: "images/polo.webp",
-      price: "$100",
+      price: 100,
       desc: "Simple and flexible and reasonbale price.",
+      quan:1,
+
     },
     {
       full: "Texios",
       img: "images/rado-2.avif",
-      price: "$440",
+      price: 440,
       desc: "This Watch has some amazing effects.",
+      quan:1,
+
     },
     {
       full: "Maxios",
       img: "images/rado-1.webp",
-      price: "$540",
+      price: 540,
       desc: "This is latest version of maximos",
     },
     {
       full: "G-shock9xm",
       img: "images/watch-3.avif",
-      price: "$740",
+      price: 740,
       desc: "G-shock 9xm has avalible on G-shock store",
+      quan:1,
+
     },
   ];
 
