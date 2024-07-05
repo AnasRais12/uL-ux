@@ -1,23 +1,23 @@
 import React from 'react'
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+// import Slider from "react-slick";
+// import "slick-carousel/slick/slick.css";
+// import "slick-carousel/slick/slick-theme.css";
 
 const Making = () => {
-    var settings = {
-        dots: true,
-        infinite: true,
-        width: '30%',
-        speed: 500,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      };
+    // var settings = {
+    //     dots: true,
+    //     infinite: true,
+    //     width: '30%',
+    //     speed: 500,
+    //     slidesToShow: 1,
+    //     slidesToScroll: 1,
+    //   };
 
   return (
     <>
     <div className='w-full py-20 px-10 bg-gray-300 mb-[80px] '>
      <div className='slide text-center   py-5 font-bold text-[30px] px-20 w-full ' style={{  margin: '0 auto'  }}>
-      <Slider {...settings}>
+      {/* <Slider {...settings}>
         
         <h3 className=' text-orange-800 '>Discover Comfort, Discover Confidence</h3>
         <h3 className='text-yellow-900'>Crafted with Care Designed for You</h3>
@@ -29,7 +29,8 @@ const Making = () => {
         <img  className='py-1 px-1 rounded-[50%] ' src='images/apple-touch-icon.png'></img>
         <h1 className='text-green-950'>Ole</h1>
         </div>
-      </Slider>
+      </Slider> */}
+      <h1>Anas BAIG</h1>
     </div>
     </div>
     </>
