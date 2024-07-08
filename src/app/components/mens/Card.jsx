@@ -34,7 +34,7 @@ function Card({ item, ind, addToCart }) {
           <div
             onClick={() => addToCart(item)}
             className="py-2 px-8 mb-[10px] flex justify-center items-center
-               hover:bg-green-400 active:bg-green-950 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
+               hover:bg-gray-600 active:bg-green-950 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
           >
             Add To Cart{" "}
             <span className="text-[18px]">
