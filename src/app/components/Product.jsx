@@ -77,7 +77,7 @@ function Product({ scrollToRe, slide, addToCart }) {
     <>
       <div
         ref={scrollToRe}
-        className=" rounded-[10px] shadow-lg w-full grid gird-rows-3 grid-cols-3 gap-10 px-[5%] mb-[20px]"
+        className=" rounded-[10px] shadow-lg w-full grid gird-rows-1 grid-cols-1 gap-10 px-[5%] mb-[20px] md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3"
       >
         {data.map((datas, index) => (
           <Card item={datas} ind={index} addToCart={addToCart} />

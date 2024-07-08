@@ -17,12 +17,11 @@ const Making = () => {
 
   return (
     <>
-    <div className='w-full py-20 px-10 bg-gray-300 mb-[80px] '>
+    <div className='w-full py-20 px-10 bg-gray-300 mb-[80px] hidden sm:block '>
      <div className='slide text-center   py-5 font-bold text-[30px] px-20 w-full ' style={{  margin: '0 auto'  }}>
        <Slider {...settings}>  
        <div className='flex justify-center items-center px-[48%] '>
-        <img  className='py-1 px-1 rounded-[50%] ' src='images/apple-touch-icon.png'></img>
-        <h1 className='text-green-950'>Ole</h1>
+        <h1  className='text-green-950 '>Ole</h1>
         </div>
         <h3 className=' text-orange-800 '>Discover Comfort, Discover Confidence</h3>
         <h3 className='text-yellow-900'>Crafted with Care Designed for You</h3>

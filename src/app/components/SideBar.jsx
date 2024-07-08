@@ -19,7 +19,7 @@ function SideBar({ isSideBar, setIsSideBar, cartitem }) {
     <div
       className={` ${
         isSideBar == true
-          ? "w-[30%] overflow-y-auto px-5"
+          ? " game w-[30%] overflow-y-auto px-5"
           : "w-0 overflow-hidden"
       }   bg-white shadow-lg fixed duration-300 top-0 right-0 py-[20px] h-screen  rounded-[10px] z-40`}
     >
@@ -28,7 +28,7 @@ function SideBar({ isSideBar, setIsSideBar, cartitem }) {
           <GiSplitCross className="hover:scale-150 text-red-700 text-[25px]" />
         </button>
       </div>
-      <div className="w-full py-8  flex justify-center items-center font-bold text-[25px] text-green-950 gap-[30px]">
+      <div className="w-full py-8  flex justify-center bg-blue-500  items-center font-bold text-[12px] text-green-950 gap-[30px] sm:text-[15px] ">
         <h1>Your Shopping Cart</h1>
       </div>
       <div

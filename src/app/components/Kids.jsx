@@ -60,13 +60,13 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
   ];
   return (
     <>
-      <div className="w-full font-bold mt-[10px] text-center text-black text-[40px]">
+      <div className="w-full font-bold mt-[10px] text-center text-black text-[30px] sm:text-[40px]">
         <h1>Kids Product</h1>
       </div>
 
       <div
         ref={kidRef}
-        className=" grid grid-cols-3 grid-rows-3 gap-10 px-[5%] pt-[20px]    "
+        className=" grid grid-cols-1 grid-rows-1 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-3 lg:grid-rows-3 gap-10 px-[5%] pt-[20px]    "
       >
         {kdata.map((kdata, index) => (
           <Card item={kdata} ind={index} addToCart={addToCart} />

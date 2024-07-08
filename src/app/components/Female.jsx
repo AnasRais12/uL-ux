@@ -60,12 +60,12 @@ const Fdata = [
 const Female = ({ scrollToRef, femaleslide, addToCart }) => {
   return (
     <>
-      <div className="w-full font-bold  text-center text-black text-[40px]">
+      <div className="w-full font-bold  text-center text-black text-[30px] sm:text-[40px]">
         <h1>Female Product</h1>
       </div>
       <div
         ref={scrollToRef}
-        className="w-full  py-6 grid grid-cols-3 grid-rows-3 gap-10 px-[5%] "
+        className="w-full  py-6 grid grid-cols-1 grid-rows-1 gap-10 px-[5%] sm:grid-rows-2 sm:grid-cols-2 md:grid-rows-2 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3   "
       >
         {Fdata.map((fdata, index) => (
           <Card item={fdata} ind={index} addToCart={addToCart} />
