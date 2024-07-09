@@ -41,49 +41,6 @@ function Card({ item, ind, addToCart }) {
               <MdShoppingCartCheckout />
             </span>
           </div>
-          {/* {click && (
-            <div className="   bg-gray-200 w-[74%] h-[340px]   absolute top-[90px] left-[58px] rounded-[5px] ">
-              {setsumbit ? (
-                <form
-                  onSubmit={handler}
-                  className="flex flex-col   w-full px-1 "
-                  action=""
-                >
-                  <h1 className="mb-[8px] font-bold text-[25px]">
-                    Pay With Paypal
-                  </h1>
-                  <label>
-                    <h1 className="mb-[6px]">Enter Paypal Email: </h1>
-                    <input
-                      required
-                      className="mb-[8px] py-2 border-2 pl-2 "
-                      type="email"
-                      placeholder=" Your Email"
-                    />
-                  </label>
-                  <label>
-                    <h1 className="mb-[6px]">Enter Code: </h1>
-
-                    <input
-                      required
-                      className="mb-[8px] py-2 border-2 pl-2 "
-                      type="password"
-                      placeholder="Your Code"
-                    />
-                  </label>
-
-                  <button
-                    className="mt-[8px] py-1 px-6 bg-black text-white focus:bg-red-950 rounded-[30px]"
-                    type="sumbit"
-                  >
-                    <span>Pay</span> {item?.price}
-                  </button>
-                </form>
-              ) : (
-                "Wait"
-              )}
-            </div>
-          )} */}
         </div>
       </div>
       {/* </div> */}

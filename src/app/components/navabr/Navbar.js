@@ -27,13 +27,13 @@ const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
         Choices
         className="w-full  bg-black py-3 flex items-center justify-around px-4 relative "
       >
-        <div className="px-3 py-3 rounded-[50%]   ">
+        <div className="px-1 py-3 rounded-[50%] sm:px-3   ">
           <img
-            className="w-full h-[50px] rounded-[50%] border-2 border-white"
+            className="w-[100px] px-0 h-[60px] rounded-[50%] border-2 border-black sm:w-full sm:h-[50px]"
             src="images/online.avif"
           />
         </div>
-        <div className="w-[100%]  h-[40px] px-4 sm:w-[60%] ">
+        <div className="w-[100%]  h-[40px] px-2 sm:w-[60%] sm:px-4 ">
           <input
             className="w-full h-[40px] rounded-[5px] border-2 pl-5 "
             type="text"
