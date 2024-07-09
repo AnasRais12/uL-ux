@@ -13,9 +13,7 @@ function SideBar({ isSideBar, setIsSideBar, cartitem }) {
       settotal(newtotal);
     }
   }, [cartitem]);
-  console.log("cartitem");
-  console.log(cartitem);
-  console.log("cartitem");
+  
   return (
     <div
       className={` ${
