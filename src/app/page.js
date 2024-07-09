@@ -36,6 +36,7 @@ const page = () => {
   }
 
   return (
+    <>
     <div className=" w-full h-full bg-gray-200 ">
       <Navbar
         scrollToSection={scrollToSection}
@@ -49,7 +50,6 @@ const page = () => {
         isSideBar={isSideBar}
         setIsSideBar={setIsSideBar}
         cartitem={cartItem}
-        data={kdata}
       />
       <Product scrollToRe={scroll} slide={slide} addToCart={addToCart} />
       <Female
@@ -59,6 +59,7 @@ const page = () => {
       />
       <Kids kidRef={kid} amigos={amigos} addToCart={addToCart} />
     </div>
+    </>
   );
 };
 export default page
