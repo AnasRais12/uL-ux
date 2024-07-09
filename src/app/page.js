@@ -34,11 +34,15 @@ const page = () => {
   function addToCart(item) {
     setCartItem([...cartItem, item]);
   }
+  // add to cart mai local value dalwana //
+  const [cartnumber, setcartnumber] = useState()
+
 
   return (
     <>
     <div className=" w-full h-full bg-gray-200 ">
       <Navbar
+        cartnumber={cartnumber}
         scrollToSection={scrollToSection}
         scroll={scrollSection}
         kids={kidscroll}
@@ -47,6 +51,9 @@ const page = () => {
       />
 
       <SideBar
+        cartnumber={cartnumber}
+        setcartnumber={setcartnumber}
+      
         isSideBar={isSideBar}
         setIsSideBar={setIsSideBar}
         cartitem={cartItem}

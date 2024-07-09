@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { GiSplitCross } from "react-icons/gi";
 
-function SideBar({ isSideBar, setIsSideBar, cartitem }) {
-  const [total, settotal] = useState(0);
-  // const [item, setitem] = useState([data])
+function SideBar({
+  isSideBar,
+  setIsSideBar,
+  cartitem,
+  cartnumber,
+  setcartnumber,
+}) {
+  const [total, settotal] = useState();
+  const [quantity, setquantity] = useState(1);
 
   useEffect(() => {
     if (cartitem.length > 0) {
@@ -11,9 +17,14 @@ function SideBar({ isSideBar, setIsSideBar, cartitem }) {
         return acc + currentItem.price;
       }, 0);
       settotal(newtotal);
+      if (cartnumber) {
+        setcartnumber(cartnumber + 1);
+      } else {
+        setcartnumber(1);
+      }
     }
   }, [cartitem]);
-  
+
   return (
     <div
       className={` ${
@@ -48,6 +59,25 @@ function SideBar({ isSideBar, setIsSideBar, cartitem }) {
                   src={item.img}
                 />
                 <h1 className="text-[12px] sm:text-[18px]"> {item.full}</h1>
+              </div>
+              <div className="flex space-x-2">
+                <button
+                  className=""
+                  onClick={() => {
+                    quantity == 0 ? setquantity(0) : setquantity(quantity - 1);
+                  }}
+                >
+                  -
+                </button>
+                <p>{quantity}</p>
+                <button
+                  className=""
+                  onClick={() => {
+                    setquantity(quantity + 1);
+                  }}
+                >
+                  +
+                </button>
               </div>
               <div className="w-[80px] sm:w-[100px]  lg:w-[120px]   sm:justify-end  py-2 flex justify-end px-1  ">
                 <h1 className=" text-[10px] sm:text-[18px]"> ${item.price}</h1>

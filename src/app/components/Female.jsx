@@ -2,54 +2,63 @@ import React from "react";
 import Card from "./mens/Card";
 const Fdata = [
   {
+    id: 11,
     full: "Estilient Perfume",
     img: "images/perfume-1.avif",
     price: 150,
     desc: "15 Hours Lasting",
   },
   {
+    id: 12,
     full: "Corocial Perfume",
     img: "images/perfume-2.avif",
     price: 250,
     desc: "Crocial Latest Perfume.  ",
   },
   {
+    id: 13,
     full: "Luisional Perfume",
     img: "images/perfume-3.avif",
     price: 310,
     desc: "Luisional 3-days Lasting ",
   },
   {
+    id: 14,
     full: "Jusionhenal Jacket",
     img: "images/jacket-1.avif",
     price: 340,
     desc: "Jusiohnemal Latets Demand",
   },
   {
+    id: 15,
     full: "Kusional Watch",
     img: "images/FEMALE-1.webp",
     price: 280,
     desc: "Watch has diff abitlity to wear",
   },
   {
+    id:16,
     full: "Fusional Sandle",
     img: "images/womes-2.avif",
     price: 500,
     desc: "Simple and flexible Sandle.",
   },
   {
+    id:17,
     full: "Ndure Glasses ",
     img: "images/glass.avif",
     price: 440,
     desc: "This Glasses save sunlight.",
   },
-  {
+  { 
+    id:18,
     full: "Maxios",
     img: "images/female-2.avif",
     price: 540,
     desc: "This is latest version of maximos",
   },
   {
+    id:19,
     full: "Ouisiona Watch",
     img: "images/female-3.avif",
     price: 740,

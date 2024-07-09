@@ -15,8 +15,8 @@ import { FaFacebook } from "react-icons/fa";
 const Help = () => {
   return (
     <>
-    <div className="w-full py-10 bg-gradient-to-r from-green-950 via-green-900  to-black">
-      <div className="w-full h-[40vh] font-bold flex justify-center items-center text-white text-[40px] ">
+    <div className="w-full sm:py-5 bg-gradient-to-r from-green-950 via-green-900  to-black py-10">
+      <div className="w-full h-[40vh] font-bold flex justify-center items-center text-white sm:text-[40px] text-[20px] ">
         <h1>How Can We Help  You?</h1>
       </div>
       <div className="w-full   flex flex-col">

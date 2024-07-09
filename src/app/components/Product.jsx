@@ -14,26 +14,33 @@ function Product({ scrollToRe, slide, addToCart }) {
       img: "images/big-shoe3.png",
       price: 220,
       desc: "Dunki has gadget to make your speed fast ",
+      id:20,
     },
     {
       full: "Nike",
       img: "images/jordna-2.avif",
       price: 210,
       desc: "Nike this product has inspired to dunki ",
+      id:21,
+
     },
     {
       full: "Polo-shirt",
       img: "images/polo-2.webp",
       price: 140,
       desc: "This is new product launch by Polo v-jh.",
+      id:22,
     },
     {
       full: "Polo-jh",
       img: "images/polo-1.avif",
       price: 180,
       desc: "This shirt  is insipired by jordan story",
+      id:23,
+
     },
     {
+      id:24,
       full: "Polo",
       img: "images/polo.webp",
       price: 100,
@@ -43,6 +50,7 @@ function Product({ scrollToRe, slide, addToCart }) {
       full: "Texios",
       img: "images/rado-2.avif",
       price: 440,
+      id:25,
       desc: "This Watch has some amazing effects.",
     },
     {
@@ -50,12 +58,15 @@ function Product({ scrollToRe, slide, addToCart }) {
       img: "images/rado-1.webp",
       price: 540,
       desc: "This is latest version of maximos",
+      id:26,
     },
     {
       full: "G-shock9xm",
       img: "images/watch-3.avif",
       price: 740,
       desc: "G-shock 9xm has avalible on G-shock store",
+      id:27,
+      
     },
   ];
 

@@ -11,7 +11,7 @@ import { RxCross1 } from "react-icons/rx";
 import { GiSplitCross } from "react-icons/gi";
 
 
-const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
+const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar,cartnumber }) => {
   const [click, setclick] = useState(false);
 
   const toggle = () => {
@@ -88,13 +88,15 @@ const Navbar = ({ scrollToSection, scroll, kids, topslide, setIsSideBar }) => {
               </Link>
             </div>
           )}
-
+          <div className="flex hover:border-b-orange-100 border-black border-2">
           <button
             onClick={() => setIsSideBar(true)}
-            className="border-2 border-black hover:border-b-orange-100"
+            className="border-2 border-black "
           >
             <MdShoppingCartCheckout className="text-[26px]" />
           </button>
+          <p className="text-red-600">{cartnumber}</p>
+          </div>
         </div>
       </div>
       <div className="w-full bg-white px-2 py-3  flex items-center font-bold text-black text-[20px] border-b-2 border-black mb-[40px] sm:mb-0  ">

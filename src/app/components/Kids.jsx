@@ -4,58 +4,68 @@ import Card from "./mens/Card";
 const Kids = ({ kidRef, amigos, addToCart }) => {
   const kdata = [
     {
+      id: 1,
       full: "Kidz Clothes Pack",
       img: "images/clo-1.jpeg",
       price: 400,
       desc: "50% off This Season",
+      id: 2,
     },
     {
       full: "5-7 Kidz CLothes",
       img: "images/clo-2.jpeg",
       price: 220,
       desc: " This Product made in china",
+      id: 3,
     },
     {
       full: "7-10 Kid-Clothes",
       img: "images/clo-1.jpeg",
       price: 320,
       desc: "This Product made in USA ",
+      id: 4,
     },
     {
       full: "Toy-Gun Juishonal",
       img: "images/gun-1.jpeg",
       price: 520,
       desc: "This is new product launch by K-Toys",
+      id: 5,
     },
     {
       full: "Gun-Shikoran",
       img: "images/gun-2.jpeg",
       price: 250,
       desc: "This Gun is inspired by J-45",
+      id: 6,
     },
     {
       full: "Full Pack Of Toys",
       img: "images/toy-1.jpeg",
       price: 700,
       desc: "Heaven of Toys",
+      id: 7,
     },
     {
       full: "Ferrari-Texios-",
       img: "images/toy-2.jpeg",
       price: 450,
       desc: "This Car Looks Texios",
+      id: 8,
     },
     {
       full: "Range-Toy-Rover",
       img: "images/toy-3.jpeg",
       price: 300,
       desc: "This Car look Rover",
+      id: 9,
     },
     {
       full: "Yahama-91",
       img: "images/toy-4.jpeg",
       price: 400,
       desc: "This Produucts Looks like Yahama",
+      id: 10,
     },
   ];
   return (
@@ -80,7 +90,6 @@ const Kids = ({ kidRef, amigos, addToCart }) => {
           Back To Top
         </button>
       </div>
-      
     </>
   );
 };
