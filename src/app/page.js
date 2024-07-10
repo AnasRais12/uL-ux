@@ -5,7 +5,6 @@ import Product from "./components/Product";
 import Female from "./components/Female";
 import Kids from "./components/Kids";
 import SideBar from "./components/SideBar";
-import Add from "./components/add";
 
 const page = () => {
   const topslide = useRef(null);
@@ -328,7 +327,6 @@ const page = () => {
           addToCart={addToCart}
           productsArray={productsArray}
         />
-        <Add />
       </div>
     </>
   );
