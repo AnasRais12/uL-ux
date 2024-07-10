@@ -13,7 +13,7 @@ function Card({ item, ind, addToCart }) {
   };
   return (
     <>
-      {/* <div key={ind} className="w-full  duration-200 py-[30px] relative bg-yellow-900 px-[55px] "> */}
+      {/* <div key= className="w-full  duration-200 py-[30px] relative bg-yellow-900 px-[55px] "> */}
       <div className=" w-[100%]  px-2 hover:scale-110 duration-200 relative rounded-[10px] border-4 border-black flex flex-col  text-black font-bold text-center py-[20px] items-center bg-white shadow-black shadow-lg sm:w-[100%] sm:px-0 md:px-0 lg:px-0 ">
         <h1 className="text-[25px] mb-[10px]">{item?.full}</h1>
         <div className="w-[150px] h-[180px] rounded-[50%] duration-300 ">
@@ -34,7 +34,7 @@ function Card({ item, ind, addToCart }) {
           <div
             onClick={() => addToCart(item)}
             className="py-2 px-8 mb-[10px] flex justify-center items-center
-               hover:bg-gray-600 active:bg-green-950 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
+               hover:bg-gray-900 focus:bg-red-95`0 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
           >
             Add To Cart{" "}
             <span className="text-[18px]">
