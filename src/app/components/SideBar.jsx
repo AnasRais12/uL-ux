@@ -32,7 +32,7 @@ function SideBar({
     <div
       className={` ${
         isSideBar == true
-          ? " game w-full  overflow-y-auto px-2  sm:w-[45%] md:w-[40%] lg:w-[30%]"
+          ? " game w-full  overflow-y-auto sm:px-2 px-1  sm:w-[55%] md:w-[45%] lg:w-[30%]"
           : "w-0 overflow-hidden"
       }   bg-white shadow-lg fixed duration-300 top-0 right-0 py-[20px] h-screen  rounded-[10px] z-40`}
     >
@@ -54,15 +54,15 @@ function SideBar({
       </div>
 
       {cartitem.map((item, index) => (
-        <div key={index} className="flex border shadow-lg mb-[20px]">
+        <div key={index} className="flex border shadow-lg mb-[20px] mr-0 ">
           <div className="w-full   flex items-center py-[10px] justify-around ">
-            <div className="     w-[50%]  sm:w-[55%] sm: py-2 flex   items-center text-[18px]  ">
+            <div className="w-[50%]  sm:w-[55%] sm: py-2 flex   items-center text-[18px]  ">
               <img
-                className="w-[50px] h-[50px]   rounded-[50%] object-cover"
+                className="sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]    rounded-[50%] object-cover"
                 src={item.img}
               />
-              <h1 className="text-[18px] sm:text-[18px] px-2"> {item.full}</h1>
-              <button className="px-1" onClick={() => minus(item)}>
+              <h1 className="text-[12px] sm:text-[18px] px-2"> {item.full}</h1>
+              <button className="px-1 text-[14px]" onClick={() => minus(item)}>
                 <FaMinus
                   className={
                     item.quantity === 1
@@ -74,15 +74,15 @@ function SideBar({
               </button>
               <p>{item.quantity}</p>
               <button className="" onClick={() => upgrade(item)}>
-                <FaPlus className="px-1 text-[22px]" />
+                <FaPlus className="px-1 text-[18px] sm:text-[22px]" />
               </button>
             </div>
-            <div className="w-[37%] justify-between py-2 flex  px-1  ">
-              <h1 className=" text-[18px] sm:text-[18px] px-8"> ${item.price}</h1>
+            <div className="w-[37%] justify-between items-center py-2 flex  ">
+              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-5  "> ${item.price}</h1>
               <button
-              className="text-[20px] hover:text-red-500 px-2"
+              className="sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
               onClick={() => removeFromCart(item)}
-            > <ImCross className="text-red-950"/>
+            > <ImCross className="text-red-800"/>
             </button>
             </div>
             
