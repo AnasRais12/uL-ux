@@ -3,11 +3,9 @@ import { MdShoppingCartCheckout } from "react-icons/md";
 import { FaChild } from "react-icons/fa";
 import { BiMale } from "react-icons/bi";
 import Link from "next/link";
-import { HiShoppingCart } from "react-icons/hi2";
 import { FaFemale } from "react-icons/fa";
 import Making from "../Making";
 import { FaBars } from "react-icons/fa6";
-import { RxCross1 } from "react-icons/rx";
 import { GiSplitCross } from "react-icons/gi";
 
 const Navbar = ({
@@ -67,7 +65,7 @@ const Navbar = ({
             onClick={toggle}
             className="py-2 px-2 font-bold text-[18px]    rounded-[20px] block sm:hidden"
           >
-            {click ? (
+            {()=>click ? (
               <GiSplitCross className="font-bold text-[23px] text-white" />
             ) : (
               <FaBars className="font-bold text-[23px]" />

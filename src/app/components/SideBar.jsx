@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GiSplitCross } from "react-icons/gi";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
-
+import Checkout from "./Checkout";
 
 function SideBar({
   isSideBar,
@@ -13,8 +13,11 @@ function SideBar({
   upgrade,
   removeFromCart,
   minus,
+  check,
+  setcheck,
+  total,
+  settotal,
 }) {
-  const [total, settotal] = useState();
 
   useEffect(() => {
     if (cartitem.length >= 0) {
@@ -34,7 +37,7 @@ function SideBar({
         isSideBar == true
           ? " game w-full  overflow-y-auto sm:px-2 px-1  sm:w-[55%] md:w-[45%] lg:w-[30%]"
           : "w-0 overflow-hidden"
-      }   bg-white shadow-lg fixed duration-300 top-0 right-0 py-[20px] h-screen  rounded-[10px] z-40`}
+      }   bg-white shadow-lg fixed duration-300 top-0 right-0 py-[20px] h-screen  rounded-[10px] z-30`}
     >
       <div className="w-full py-1 flex justify-end px-5  font-bold text-[25px] text-white gap-[30px]">
         <button className="" onClick={() => setIsSideBar(false)}>
@@ -50,7 +53,6 @@ function SideBar({
       >
         <h1 className=" ">Prodcut </h1>
         <h1 className=" sm:text-start  w-[37%] sm:w-[35%]   ">Price</h1>
-
       </div>
 
       {cartitem.map((item, index) => (
@@ -68,7 +70,6 @@ function SideBar({
                     item.quantity === 1
                       ? " opacity-5 bg-white cursor-not-allowed "
                       : "  "
-                      
                   }
                 />
               </button>
@@ -78,14 +79,18 @@ function SideBar({
               </button>
             </div>
             <div className="w-[37%] justify-between items-center py-2 flex    ">
-              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-6 text-center "> ${item.price}</h1>
+              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-6 text-center ">
+                {" "}
+                ${item.price}
+              </h1>
               <button
-              className="sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
-              onClick={() => removeFromCart(item)}
-            > <ImCross className="text-red-800"/>
-            </button>
+                className="sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
+                onClick={() => removeFromCart(item)}
+              >
+                {" "}
+                <ImCross className="text-red-800" />
+              </button>
             </div>
-            
           </div>
         </div>
       ))}
@@ -94,9 +99,14 @@ function SideBar({
           ${total}
         </h4>
       </div>
-      <button className=" w-full px-1 text-[10px] sm:text-[15px] py-2 sm:px-4 sm:py-4 mt-[10px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600">
-         Checkout {cartitem?.length}
+
+      <button
+        onClick={() => setcheck(true)}
+        className=" w-full px-1 text-[10px] sm:text-[15px] py-2 sm:px-4 sm:py-4 mt-[10px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600"
+      >
+        Checkout {cartitem?.length}
       </button>
+      {/* <Checkout  />/ */}
     </div>
   );
 }

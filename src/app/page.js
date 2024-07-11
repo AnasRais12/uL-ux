@@ -5,6 +5,7 @@ import Product from "./components/Product";
 import Female from "./components/Female";
 import Kids from "./components/Kids";
 import SideBar from "./components/SideBar";
+import Checkout from "./components/Checkout";
 
 const page = () => {
   const topslide = useRef(null);
@@ -30,9 +31,11 @@ const page = () => {
     kid.current.scrollIntoView({ behavior: "smooth" });
   };
   const [isSideBar, setIsSideBar] = useState(false);
+  const [check, setcheck] = useState(false);
   const [cartItem, setCartItem] = useState([]);
   const [cartnumber, setcartnumber] = useState(0);
   const [toggle, settoggle] = useState("Add to cart");
+  const [total, settotal] = useState();
   const [productsArray, settProductsArray] = useState([
     {
       id: 11,
@@ -357,9 +360,13 @@ const page = () => {
           isSideBar={isSideBar}
           setIsSideBar={setIsSideBar}
           cartitem={cartItem}
+          check={check}
+          setcheck={setcheck}
           removeFromCart={removeFromCart}
           upgrade={upgrade}
           minus={minus}
+          total={total}
+          settotal={settotal}
         />
         <Product
           scrollToRe={scroll}
@@ -381,6 +388,7 @@ const page = () => {
           addToCart={addToCart}
           productsArray={productsArray}
         />
+        <Checkout cartitem={cartItem} check={check} setcheck={setcheck} subtotal={total}/>
       </div>
     </>
   );
