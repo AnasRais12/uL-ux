@@ -1,6 +1,13 @@
 import React from "react";
 import Card from "./mens/Card";
-function Product({ scrollToRe, slide, addToCart, productsArray }) {
+function Product({
+  scrollToRe,
+  slide,
+  addToCart,
+  productsArray,
+  settoggle,
+  toggle,
+}) {
   return (
     <>
       <div
@@ -10,7 +17,13 @@ function Product({ scrollToRe, slide, addToCart, productsArray }) {
         {productsArray.map((datas, index) => (
           <>
             {datas.category_id == 1 && (
-              <Card item={datas} ind={index} addToCart={addToCart} />
+              <Card
+                item={datas}
+                ind={index}
+                addToCart={addToCart}
+                settoggle={settoggle}
+                toggle={toggle}
+              />
             )}
           </>
         ))}

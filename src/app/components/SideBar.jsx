@@ -49,13 +49,13 @@ function SideBar({
     "
       >
         <h1 className=" ">Prodcut </h1>
-        <h1 className=" sm:text-start w-[35%] sm:w-[35%]  ">Price</h1>
+        <h1 className=" sm:text-start  w-[37%] sm:w-[35%]   ">Price</h1>
 
       </div>
 
       {cartitem.map((item, index) => (
         <div key={index} className="flex border shadow-lg mb-[20px] mr-0 ">
-          <div className="w-full   flex items-center py-[10px] justify-around ">
+          <div className="w-full    flex items-center py-[10px] justify-around ">
             <div className="w-[50%]  sm:w-[55%] sm: py-2 flex   items-center text-[18px]  ">
               <img
                 className="sm:w-[50px] sm:h-[50px] w-[40px] h-[40px]    rounded-[50%] object-cover"
@@ -77,8 +77,8 @@ function SideBar({
                 <FaPlus className="px-1 text-[18px] sm:text-[22px]" />
               </button>
             </div>
-            <div className="w-[37%] justify-between items-center py-2 flex  ">
-              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-5  "> ${item.price}</h1>
+            <div className="w-[37%] justify-between items-center py-2 flex    ">
+              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-6 text-center "> ${item.price}</h1>
               <button
               className="sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
               onClick={() => removeFromCart(item)}

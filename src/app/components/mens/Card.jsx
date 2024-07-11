@@ -1,13 +1,10 @@
 import React, { useState } from "react";
 import { MdShoppingCartCheckout } from "react-icons/md";
 
-function Card({ item, ind, addToCart }) {
+function Card({ item, ind, addToCart, settoggle, toggle }) {
   const [click, setclick] = useState(false);
   const [sumbit, setsumbit] = useState(false);
 
-  let change = () => {
-    setclick(true);
-  };
   const handler = (event) => {
     setsumbit(true);
   };
@@ -31,16 +28,19 @@ function Card({ item, ind, addToCart }) {
           </h5>
         </div>
         <div className="">
-          <div
-            onClick={() => addToCart(item)}
-            className="py-2 px-8 mb-[10px] flex justify-center items-center
-               hover:bg-gray-900 focus:bg-red-95`0 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
-          >
-            Add To Cart{" "}
-            <span className="text-[18px]">
-              <MdShoppingCartCheckout />
-            </span>
-          </div>
+          {item.toggle == true ? (
+            <button
+              onClick={() => addToCart(item)}
+              className="py-2 px-8 mb-[10px] flex justify-center items-center hover:bg-gray-400  focus:bg-red-950 active:bg-red-950 bg-black text-white rounded-[20px] gap-[10px] cursor-pointer "
+            >
+              Add To Cart
+              <span className="text-[18px]">
+                <MdShoppingCartCheckout />
+              </span>
+            </button>
+          ) : (
+            "Already Added"
+          )}
         </div>
       </div>
       {/* </div> */}
