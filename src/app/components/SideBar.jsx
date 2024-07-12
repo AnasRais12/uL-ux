@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { GiSplitCross } from "react-icons/gi";
 import { FaMinus, FaPlus } from "react-icons/fa";
 import { ImCross } from "react-icons/im";
+import { MdDelete } from "react-icons/md";
 import Checkout from "./Checkout";
 
 function SideBar({
@@ -41,7 +42,7 @@ function SideBar({
     >
       <div className="w-full py-1 flex justify-end px-5  font-bold text-[25px] text-white gap-[30px]">
         <button className="" onClick={() => setIsSideBar(false)}>
-          <GiSplitCross className="hover:scale-150 text-red-700 text-[25px]" />
+          <ImCross className="hover:scale-150 text-red-700 text-[25px]" />
         </button>
       </div>
       <div className="w-full py-8   flex justify-center  items-center font-bold text-[22px] text-green-950  sm:text-[20px] md:text-[20px] ">
@@ -64,31 +65,31 @@ function SideBar({
                 src={item.img}
               />
               <h1 className="text-[12px] sm:text-[18px] px-2"> {item.full}</h1>
-              <button className="px-1 text-[14px]" onClick={() => minus(item)}>
+              <button className="px-1 text-[14px] minus" onClick={() => minus(item)}>
                 <FaMinus
                   className={
                     item.quantity === 1
-                      ? " opacity-5 bg-white cursor-not-allowed "
+                      ? "   opacity-5 bg-white cursor-not-allowed "
                       : "  "
                   }
                 />
               </button>
-              <p>{item.quantity}</p>
+              <p className="plus">{item.quantity}</p>
               <button className="" onClick={() => upgrade(item)}>
-                <FaPlus className="px-1 text-[18px] sm:text-[22px]" />
+                <FaPlus className="plus-1 px-1 text-[18px] sm:text-[22px]" />
               </button>
             </div>
             <div className="w-[37%] justify-between items-center py-2 flex    ">
-              <h1 className=" text-[14px] sm:text-[18px] sm:px-4 px-6 text-center ">
+              <h1 className=" delete text-[14px] sm:text-[18px] sm:px-4 px-6 text-center ">
                 {" "}
                 ${item.price}
               </h1>
               <button
-                className="sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
+                className=" sm:text-[20px] mr-2 text-[12px] hover:text-red-500 "
                 onClick={() => removeFromCart(item)}
               >
                 {" "}
-                <ImCross className="text-red-800" />
+                <MdDelete className="text-red-600 hover:text-red-700 hover:scale-125 " />
               </button>
             </div>
           </div>

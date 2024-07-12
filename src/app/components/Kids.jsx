@@ -20,7 +20,7 @@ const Kids = ({ kidRef, amigos, addToCart, productsArray }) => {
           </>
         ))}
       </div>
-      <div className="w-full items-center justify-center flex border-b-2 border-black  py-6 ">
+      <div className="w-full items-center justify-center flex border-b-2 border-black mt-[40px]  py-6 ">
         <button
           onClick={amigos}
           className="bg-black  text-white font-bold py-2 px-12 rounded-[20px]  active:bg-green-900 hover:bg-orange-800"

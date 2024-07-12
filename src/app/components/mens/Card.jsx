@@ -39,7 +39,7 @@ function Card({ item, ind, addToCart, settoggle, toggle }) {
               </span>
             </button>
           ) : (
-            "Already Added"
+            "Added To The Cart"
           )}
         </div>
       </div>

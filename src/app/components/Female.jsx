@@ -9,7 +9,7 @@ const Female = ({ scrollToRef, femaleslide, addToCart, productsArray }) => {
       </div>
       <div
         ref={scrollToRef}
-        className="w-full  py-6 grid grid-cols-1 grid-rows-1 gap-10 px-[5%] sm:grid-rows-2 sm:grid-cols-2 md:grid-rows-2 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3   "
+        className="w-full  py-6 grid grid-cols-1 grid-rows-1 gap-10 px-[5%]  md:grid-rows-2 md:grid-cols-2 lg:grid-rows-3 lg:grid-cols-3   "
       >
         {productsArray.map((fdata, index) => (
           <>
@@ -19,7 +19,7 @@ const Female = ({ scrollToRef, femaleslide, addToCart, productsArray }) => {
           </>
         ))}
       </div>
-      <div className="w-full items-center justify-center flex border-b-2 border-black mb-[40px] py-6 ">
+      <div className="w-full  items-center justify-center flex border-b-2 border-black mb-[40px] py-6 ">
         <button
           onClick={femaleslide}
           className="bg-black  text-white font-bold py-2 px-12 rounded-[20px]  active:bg-green-900 hover:bg-orange-800"
