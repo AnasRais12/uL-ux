@@ -103,7 +103,7 @@ function SideBar({
 
       <button
         onClick={() => setcheck(true)}
-        className=" w-full px-1 text-[10px] sm:text-[15px] py-2 sm:px-4 sm:py-4 mt-[10px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600"
+        className=" w-full px-1 text-[15px] sm:text-[15px] py-2 sm:px-4 sm:py-4 mt-[10px] rounded-[10px] bg-black font-bold text-white hover:bg-orange-600"
       >
         Checkout {cartitem?.length}
       </button>
